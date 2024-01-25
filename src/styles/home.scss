@@ -1,0 +1,16 @@
+.intro-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 8rem;
+	.intro-section-type-container {
+		height: 85px;
+		width: 20%;
+		overflow: hidden;
+	}
+	.intro-section-img {
+		height: 450px;
+		width: 450px;
+	}
+}
