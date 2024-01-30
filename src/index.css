@@ -11,4 +11,9 @@ body {
 	overflow-x: hidden;
 	color: white;
 	font-family: "Exo", sans-serif;
+	background-image: url("./assets/Images/parallaxImg.jpg");
+	background-size: cover; /* Couvre tout l'élément */
+	background-position: center; /* Centrer l'image dans l'élément */
+	background-repeat: no-repeat; /* N'affiche pas l'image de manière répétée */
+	background-attachment: fixed;
 }

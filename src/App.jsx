@@ -1,10 +1,10 @@
-import  Router  from "./routes/Router";
+
+import Router from "./routes/Router";
+import "./styles/test.scss"
 
 function App() {
   return (
-		<div>
 			<Router />
-		</div>
 	);
 }
 

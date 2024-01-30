@@ -1,18 +1,21 @@
+import  { useRef } from 'react';
 import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Footer from "./Footer";
-import Parallax from "./Parallax";
+import "../styles/maincontainer.scss"
 
 function GlobalLayout() {
-	return (
-		<div>
-            <Parallax>
-			<Header />
-			<Outlet />
-			<Footer />
-            </Parallax>
-		</div>
-	);
+    const mainContainerRef = useRef(null);
+
+    return (
+        <div ref={mainContainerRef} className='main-container' id="main-container">
+        
+                <Header mainContainerRef={mainContainerRef} />
+                <Outlet />
+                <Footer />
+       
+        </div>
+    );
 }
 
 export default GlobalLayout;
