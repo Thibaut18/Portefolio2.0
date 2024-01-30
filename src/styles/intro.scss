@@ -1,0 +1,72 @@
+.intro-section {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 9rem;
+	height: 550px;
+	margin: 1.5rem 15rem 0 15rem;
+
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(1px);
+	border-radius: 4rem;
+	.intro-section-presentation {
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+		gap: 2rem;
+		font-size: 2rem;
+		font-weight: bold;
+		.intro-section-presentation-hello {
+			font-size: 2rem;
+		}
+		.intro-section-presentation-name {
+			color: #b968c7;
+			font-size: 2rem;
+		}
+	}
+	.wave {
+		animation-name: wave-animation;
+		animation-duration: 2.1s;
+		animation-iteration-count: infinite;
+		transform-origin: 70% 70%;
+		display: inline-block;
+	}
+	.intro-section-type-container {
+		height: 85px;
+		overflow: hidden;
+	}
+	.intro-section-img {
+		margin-top: 5rem;
+		height: 500px;
+		width: 500px;
+	}
+}
+
+@keyframes wave-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	10% {
+		transform: rotate(14deg);
+	}
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}

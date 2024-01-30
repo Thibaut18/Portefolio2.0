@@ -1,15 +1,8 @@
-import Type from "../components/Type"
-import homeImg from "../assets/Images/homeImg.svg"
-import "../styles/home.scss"
+import Intro from "../components/Intro"
 
 function Home () {
     return (
-        <section className="intro-section">
-            <div className="intro-section-type-container">
-        <Type/>
-        </div>
-        <img src={homeImg} alt="Coding Man" className="intro-section-img" />
-        </section>
+        <Intro/>
     );
 }
 export default Home
