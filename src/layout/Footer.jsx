@@ -1,6 +1,10 @@
+import '../styles/footer.scss'
+
 function Footer () {
     return (
+        <footer>
         <p>yo</p>
+        </footer>
     );
 }
 
