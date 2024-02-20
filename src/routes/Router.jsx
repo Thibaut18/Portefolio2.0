@@ -7,6 +7,8 @@ import GlobalLayout from "../layout/GlobalLayout";
 import Home from "../pages/Home";
 import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
+import About from "../pages/About";
+import ErrorPage from "../pages/ErrorPage";
 
 function Routes() {
 	const routes = [
@@ -23,6 +25,10 @@ function Routes() {
 					element: <Home />,
 				},
 				{
+                    path: "about", 
+                    element: <About />, 
+                },
+				{
                     path: "projects", 
                     element: <Projects />, 
                 },
@@ -30,7 +36,10 @@ function Routes() {
                     path: "contact", 
                     element: <Contact />, 
                 },
-
+				{
+					path: "*",
+					element: <ErrorPage />,
+				},
 			],
 		},
 	];

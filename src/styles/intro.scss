@@ -4,9 +4,8 @@
 	align-items: center;
 	justify-content: center;
 	gap: 9rem;
-	height: 550px;
-	margin: 1.5rem 15rem 0 15rem;
-
+	height: 600px;
+	margin: 6rem 15rem 11rem 15rem;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(2px);
 	border-radius: 4rem;
@@ -18,10 +17,6 @@
 		font-size: 2rem;
 		font-weight: bold;
 		.intro-section-presentation-hello {
-			font-size: 2rem;
-		}
-		.intro-section-presentation-name {
-			color: #b968c7;
 			font-size: 2rem;
 		}
 	}

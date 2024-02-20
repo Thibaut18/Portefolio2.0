@@ -1,8 +1,15 @@
 import Navbar from "../components/Navbar.jsx";
 import "../styles/header.scss";
 import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Header({ mainContainerRef }) {
+
+    const navigate = useNavigate(); 
+
+    const handleNavigation = (path) => {
+        navigate(path);
+    };
     useEffect(() => {
         const handleScroll = () => {
             const header = document.querySelector('.header');
@@ -30,7 +37,7 @@ function Header({ mainContainerRef }) {
 
     return (
         <header className="header">
-            <p className="header-logo">TT</p>
+            <p className="header-logo"  onClick={() => handleNavigation('/homepage')}>TT</p>
             <Navbar />
         </header>
     );

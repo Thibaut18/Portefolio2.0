@@ -1,3 +1,4 @@
+import portefolioPic from '../assets/Images/projectsPic/portefolioPic.webp'
 import eventsPic from '../assets/Images/projectsPic/eventsPic.webp';
 import omfPic from '../assets/Images/projectsPic/omfPic.webp';
 import kasaPic from '../assets/Images/projectsPic/kasaPic.webp';
@@ -7,6 +8,14 @@ import bookiPic from '../assets/Images/projectsPic/bookiPic.webp';
 import ninaPic from '../assets/Images/projectsPic/ninaPic.webp';
 
 const projectData = [
+  {
+    title: "Portefolio",
+    subtitle: "Premier Portefolio fait avec React/JS",
+    imgSrc: portefolioPic,
+    alt: "Projet portefolio",
+    repoUrl: "https://github.com/Thibaut18/Portfolio",
+    demoUrl: "https://thibautteinturier.netlify.app/homepage"
+  },
   {
     title: "724 Events",
     subtitle: "Débug",

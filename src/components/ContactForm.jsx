@@ -4,7 +4,7 @@ import '../styles/contactform.scss'
 function ContactForm() {
   const [state, handleSubmit] = useForm("mqkrqkgd");
   if (state.succeeded) {
-      return <p>Merci pour votre message. Nous vous répondrons bientôt !</p>;
+      return <p className='succeed-msg-form'>Merci pour votre message. Je vous réponds au plus vite ! 😄​</p>;
   }
   return (
       <form onSubmit={handleSubmit} className="contact-form">

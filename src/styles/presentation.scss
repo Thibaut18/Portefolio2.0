@@ -1,0 +1,25 @@
+.presentation-section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+	margin-left: 12rem;
+	margin-right: 3rem;
+	.presentation-section-h1-txt {
+		width: 500px;
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+		h1 {
+			margin-left: auto;
+			margin-right: auto;
+			font-size: 3rem;
+		}
+	}
+	.presentation-section-img {
+		width: 600px;
+		height: 400px;
+		margin-top: 5.5rem;
+	}
+}
