@@ -17,7 +17,7 @@ function Presentation () {
 					but de devenir un développeur <span className="span-word">full-stack</span> chevronné !
 				</p>
 				<p className="about-section-txt">
-					Diplômé d&apos;un <span className="span-word">bac+2</span> Techniques de commercialisation et ayant
+					Diplômé d&apos;un <span className="span-word">bac+2</span> DUT Techniques de commercialisation et ayant
 					obtenu ma première année en fac de psychologie, c&apos;est donc une 
 					<span className="span-word"> reconversion</span> totale que j&apos;ai pu réaliser grâce à <span className="span-word">OpenClassRooms</span>,
 					ce qui est pour moi une <span className="span-word">chance</span> exceptionnelle.

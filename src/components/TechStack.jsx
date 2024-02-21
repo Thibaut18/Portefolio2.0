@@ -16,17 +16,16 @@ import {
   import postmanIcon from '../assets/Images/skillsIcons/postmanIcon.svg'
   import viteIcon from '../assets/Images/skillsIcons/viteIcon.svg'
   import notionIcon from '../assets/Images/skillsIcons/notionIcon.svg'
+  import npmIcon from '../assets/Images/skillsIcons/npmIcon.svg'
 
   const TechStack = () => {
     const [tooltip, setTooltip] = useState({ show: false, text: '', x: 0, y: 0 });
   
-    // Cette fonction est appelée quand la souris entre sur une icône. Elle met à jour l'état pour afficher le tooltip.
     const handleMouseEnter = (e, text) => {
       const rect = e.target.getBoundingClientRect();
       setTooltip({ show: true, text, x: rect.left + (rect.width / 2), y: rect.top - 10 });
     };
   
-    // Cette fonction est appelée quand la souris quitte une icône. Elle met à jour l'état pour cacher le tooltip.
     const handleMouseLeave = () => setTooltip({ show: false, text: '', x: 0, y: 0 });
   
     return (
@@ -37,7 +36,7 @@ import {
           <DiCss3 className="tech-icons" onMouseEnter={(e) => handleMouseEnter(e, 'CSS3')} onMouseLeave={handleMouseLeave}/>
           <DiJavascript1 className="tech-icons" onMouseEnter={(e) => handleMouseEnter(e, 'JavaScript')} onMouseLeave={handleMouseLeave}/>
           <DiReact className="tech-icons" onMouseEnter={(e) => handleMouseEnter(e, 'React')} onMouseLeave={handleMouseLeave}/>
-          <DiNodejs className="tech-icons" onMouseEnter={(e) => handleMouseEnter(e, 'Node.js')} onMouseLeave={handleMouseLeave}/>
+          <img src={npmIcon} alt='Npm' className="tech-icons" onMouseEnter={(e) => handleMouseEnter(e, 'NodePackageManager')} onMouseLeave={handleMouseLeave}/>
           <DiGit className="tech-icons" onMouseEnter={(e) => handleMouseEnter(e, 'Git')} onMouseLeave={handleMouseLeave}/>
           <DiSass className="tech-icons" onMouseEnter={(e) => handleMouseEnter(e, 'Sass')} onMouseLeave={handleMouseLeave}/>
           <img src={reduxIcon} alt="Redux" className="tech-icons" onMouseEnter={(e) => handleMouseEnter(e, 'Redux')} onMouseLeave={handleMouseLeave}/>

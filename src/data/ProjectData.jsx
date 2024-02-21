@@ -6,6 +6,7 @@ import sbPic from '../assets/Images/projectsPic/sbPic.webp';
 import printitPic from '../assets/Images/projectsPic/printitPic.webp';
 import bookiPic from '../assets/Images/projectsPic/bookiPic.webp';
 import ninaPic from '../assets/Images/projectsPic/ninaPic.webp';
+import abPic from '../assets/Images/projectsPic/abPic.webp';
 
 const projectData = [
   {
@@ -15,6 +16,13 @@ const projectData = [
     alt: "Projet portefolio",
     repoUrl: "https://github.com/Thibaut18/Portfolio",
     demoUrl: "https://thibautteinturier.netlify.app/homepage"
+  },
+  {
+    title:"ArgentBank :",
+					subtitle:"React/Redux",
+					imgSrc:abPic,
+					alt:"Projet Argent Bank",
+					repoUrl:"https://github.com/Thibaut18/ArgentBank-website"
   },
   {
     title: "724 Events",

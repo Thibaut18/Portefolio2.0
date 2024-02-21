@@ -1,15 +1,55 @@
 .intro2-section {
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-around;
-	gap: 6rem;
+
+	justify-content: center;
+
 	margin-top: 4rem;
-	p {
-		max-width: 500px;
+
+	.intro2-section-h2-ul-p {
+		display: flex;
+		flex-direction: column;
+		h2 {
+			font-size: 2.5rem;
+			line-height: 2;
+		}
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			font-size: 1.2rem;
+
+			li {
+				padding-left: 40px;
+				background-image: url("../assets/Images/arrowIcon.svg");
+				background-repeat: no-repeat;
+				background-position: left center;
+				background-size: 30px 30px;
+				line-height: 3;
+				.nav-word {
+					cursor: pointer;
+					transition: transform 0.3s ease;
+					display: inline-block;
+					&:hover {
+						transform: scale(1.1);
+					}
+				}
+			}
+		}
+		p {
+			font-size: 1.2rem;
+			margin-left: 15rem;
+			margin-top: 6rem;
+		}
+		.rocket-man {
+			height: 120px;
+			width: 120px;
+			margin-left: 14rem;
+			margin-top: 1rem;
+		}
 	}
 	.intro2-coding-pic {
-		width: 600px;
-		height: 600px;
+		width: 400px;
+		height: 400px;
 		position: relative;
 		opacity: 0.7;
 		box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
@@ -17,8 +57,8 @@
 		margin-left: 2rem;
 
 		img {
-			width: 600px;
-			height: 600px;
+			width: 400px;
+			height: 400px;
 			filter: opacity(70%);
 			border-radius: 4rem;
 		}
@@ -32,7 +72,7 @@
 			bottom: 0;
 			background: linear-gradient(
 				to bottom,
-				rgba(46, 8, 158, 0.947),
+				rgba(30, 8, 197, 0.947),
 				rgba(41, 21, 88, 0.947)
 			);
 			mix-blend-mode: multiply;
