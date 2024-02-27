@@ -1,7 +1,28 @@
-Footer {
+.footer {
 	background-color: rgb(6, 2, 28);
 	filter: opacity(97%);
 	margin-top: 8rem;
 	position: sticky;
 	padding: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	font-family: "Orbitron", sans-serif;
+	font-size: 1.2rem;
+	.footer-social-icons {
+		position: relative;
+		color: #700c86;
+		width: 40px;
+		height: 40px;
+		text-align: center;
+		font-size: 1.2em;
+		line-height: 2em;
+		background: rgba(255, 255, 255, 0.972);
+		border-radius: 50%;
+		transition: 0.5s;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		animation: pulse 2s infinite ease-in-out;
+	}
 }

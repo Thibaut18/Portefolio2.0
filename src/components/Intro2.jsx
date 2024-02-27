@@ -1,6 +1,10 @@
 import { useNavigate } from 'react-router-dom';
 import meCoding from "../assets/Images/meCoding.webp"
 import "../styles/intro2.scss"
+import {
+    AiFillGithub,
+  } from "react-icons/ai";
+  import { FaLinkedinIn } from "react-icons/fa";
 
 function Intro2 () {
     const navigate = useNavigate(); 
@@ -19,9 +23,33 @@ function Intro2 () {
             <p>Bonne navigation !</p>
             <img src="https://media.tenor.com/lZE8tZGKLQ4AAAAi/saturn-v-space.gif" className="rocket-man"/>
 </div>
+<div className='intro2-coding-pic-social-links'>
 <div className="intro2-coding-pic">
 <img src={meCoding} alt="Le créateur de se portefolio en train de développer"/>
 </div>
+<ul className="intro2-social-links">
+              <li className="social-icons">
+                <a
+                  href="https://github.com/Thibaut18"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/thibaut-teinturier-077b87174/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+                </li>
+                </ul>
+                </div>
 </section>
     );
 }

@@ -1,6 +1,6 @@
 .intro2-section {
 	display: flex;
-
+	gap: 8rem;
 	justify-content: center;
 
 	margin-top: 4rem;
@@ -37,46 +37,93 @@
 		}
 		p {
 			font-size: 1.2rem;
-			margin-left: 15rem;
-			margin-top: 6rem;
+			margin-left: 14rem;
+			margin-top: 4rem;
 		}
 		.rocket-man {
 			height: 120px;
 			width: 120px;
-			margin-left: 14rem;
+			margin-left: 13rem;
 			margin-top: 1rem;
 		}
 	}
-	.intro2-coding-pic {
-		width: 400px;
-		height: 400px;
-		position: relative;
-		opacity: 0.7;
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-		border-radius: 4rem;
-		margin-left: 2rem;
-
-		img {
-			width: 400px;
-			height: 400px;
-			filter: opacity(70%);
+	.intro2-coding-pic-social-links {
+		.intro2-coding-pic {
+			width: 320px;
+			height: 320px;
+			position: relative;
+			opacity: 0.7;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
 			border-radius: 4rem;
-		}
+			img {
+				width: 320px;
+				height: 320px;
+				filter: opacity(70%);
+				border-radius: 4rem;
+			}
 
-		&::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background: linear-gradient(
-				to bottom,
-				rgba(30, 8, 197, 0.947),
-				rgba(41, 21, 88, 0.947)
-			);
-			mix-blend-mode: multiply;
-			border-radius: 4rem;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(
+					to bottom,
+					rgba(30, 8, 197, 0.947),
+					rgba(41, 21, 88, 0.947)
+				);
+				mix-blend-mode: multiply;
+				border-radius: 4rem;
+			}
 		}
+		.intro2-social-links {
+			justify-content: space-around;
+			align-items: center;
+			padding-top: 15px;
+			display: flex;
+			gap: 6rem;
+			position: relative;
+			padding-inline-start: 0;
+			list-style: none;
+			align-items: center;
+			margin-left: 6px;
+			.social-icons {
+				display: inline-block;
+
+				.home-social-icons {
+					position: relative;
+					color: #700c86;
+					width: 40px;
+					height: 40px;
+					text-align: center;
+					font-size: 1.2em;
+					line-height: 2em;
+					background: rgba(255, 255, 255, 0.972);
+					border-radius: 50%;
+					transition: 0.5s;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					animation: pulse 2s infinite ease-in-out;
+				}
+			}
+		}
+	}
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(128, 31, 149, 0.7);
+	}
+	50% {
+		transform: scale(1.1);
+		box-shadow: 0 0 10px 5px rgba(128, 31, 149, 0.5);
+	}
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(128, 31, 149, 0.7);
 	}
 }
