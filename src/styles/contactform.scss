@@ -1,3 +1,5 @@
+@import "./breakpoints.scss";
+
 .contact-form {
 	display: flex;
 	flex-direction: column;
@@ -7,6 +9,9 @@
 	align-items: center;
 	.form-label {
 		font-size: 2rem;
+		@include breakpoint(s-mobile) {
+			font-size: 1.5rem;
+		}
 	}
 	.form-input {
 		background-color: rgb(6, 2, 28);
@@ -14,6 +19,9 @@
 		height: 2.5rem;
 		width: 20rem;
 		padding: 6px;
+		@include breakpoint(s-mobile) {
+			width: 280px;
+		}
 	}
 	.form-textarea {
 		min-height: 500px;
@@ -22,6 +30,9 @@
 		color: #b968c7;
 		font-size: 1.6rem;
 		padding: 8px;
+		@include breakpoint(s-mobile) {
+			width: 280px;
+		}
 	}
 	.form-input::placeholder {
 		color: #b968c7;
@@ -71,4 +82,10 @@
 	border-radius: 20px;
 	padding: 20px;
 	background-color: rgb(6, 2, 28);
+	@include breakpoint(s-mobile) {
+		width: 280px;
+		margin-right: 1rem;
+		margin-right: 1rem;
+		text-align: center;
+	}
 }

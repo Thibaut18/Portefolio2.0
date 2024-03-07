@@ -16,7 +16,8 @@ function Intro2 () {
         <section className="intro2-section">
             <div className="intro2-section-h2-ul-p">
                 <h2>Bienvenue sur mon <span className="span-word">portefolio !</span></h2>
-                <ul>Sur ce <span className="span-word">site </span>vous pouvez :
+                <ul>
+                  <li className='li-style-none'>Sur ce <span className="span-word">site </span>vous pouvez :</li>
                      <li>en apprendre plus sur <span className="span-word">moi</span> et mes <span className="span-word">skills</span> techniques dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/about')}>"À Propos"</span></li> 
                      <li>jeter un oeil à <span className="span-word">mes réalisations</span> dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/projects')}>"Projets"</span></li>
                      <li>me contacter via <span className="span-word">le formulaire</span> disponible dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/contact')}>"Contact"</span></li> </ul>

@@ -1,3 +1,5 @@
+@import "./breakpoints.scss";
+
 .presentation-section {
 	display: flex;
 	flex-direction: row;
@@ -6,20 +8,66 @@
 	margin-bottom: 5rem;
 	margin-left: 12rem;
 	margin-right: 3rem;
+	position: relative;
+	@include breakpoint(s-mobile) {
+		flex-direction: column-reverse;
+		margin: 0;
+		margin-top: 2rem;
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: rgba(129, 72, 144, 0.561);
+			box-shadow: 0 4px 4px rgba(129, 72, 144, 0.561);
+		}
+
+		&::before {
+			top: -4px;
+		}
+
+		&::after {
+			bottom: -4px;
+		}
+	}
 	.presentation-section-h1-txt {
 		width: 500px;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+		@include breakpoint(s-mobile) {
+			width: auto;
+			margin-left: 1rem;
+			margin-right: 1rem;
+			text-align: justify;
+			margin-bottom: 2rem;
+		}
+
 		h1 {
 			margin-left: auto;
 			margin-right: auto;
 			font-size: 3rem;
+			@include breakpoint(s-mobile) {
+				font-size: 2.5rem;
+			}
+		}
+		p {
+			@include breakpoint(s-mobile) {
+				font-size: 1.1Srem;
+			}
 		}
 	}
 	.presentation-section-img {
 		width: 600px;
 		height: 400px;
 		margin-top: 5.5rem;
+		@include breakpoint(s-mobile) {
+			width: 310px;
+			height: 220px;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
 	}
 }

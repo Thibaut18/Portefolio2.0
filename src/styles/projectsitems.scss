@@ -1,3 +1,5 @@
+@import "./breakpoints.scss";
+
 .projects-item {
 	flex: 0 0 calc(33.3333% - 40px);
 	box-sizing: border-box;
@@ -17,7 +19,7 @@
 		overflow: hidden;
 		box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
 		.projects-item-img {
-			box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561); // Changement ici pour le hover
+			box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
 		}
 	}
 	.projects-item-img {

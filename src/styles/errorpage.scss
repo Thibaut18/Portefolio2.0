@@ -1,3 +1,5 @@
+@import "./breakpoints.scss";
+
 #error-page {
 	display: flex;
 	justify-content: center;
@@ -13,12 +15,22 @@
 			font-size: 8rem;
 			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 			font-weight: bold;
+			@include breakpoint(s-mobile) {
+				font-size: 7rem;
+			}
 		}
 		.error-page-txt {
 			color: #b968c7;
 			font-size: 3rem;
 			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 			font-weight: bold;
+			@include breakpoint(s-mobile) {
+				font-size: 2rem;
+				text-align: center;
+			}
+			@include breakpoint(tablet) {
+				text-align: center;
+			}
 		}
 		.error-page-back-to-homepage-link {
 			text-decoration: none;
@@ -26,6 +38,10 @@
 			font-size: 2rem;
 			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
 			font-weight: bold;
+			@include breakpoint(s-mobile) {
+				text-align: center;
+				font-size: 1.5rem;
+			}
 		}
 	}
 }

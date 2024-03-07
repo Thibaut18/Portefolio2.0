@@ -1,3 +1,5 @@
+@import "./breakpoints.scss";
+
 .intro-section {
 	display: flex;
 	flex-direction: row;
@@ -9,6 +11,35 @@
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(2px);
 	border-radius: 4rem;
+	@include breakpoint(s-mobile) {
+		flex-direction: column;
+		margin: 2rem 0 0 0;
+		gap: 0;
+		box-shadow: none;
+		border-top: 4px solid transparent;
+		border-bottom: 4px solid transparent;
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: rgba(129, 72, 144, 0.561);
+			box-shadow: 0 4px 4px rgba(129, 72, 144, 0.561);
+		}
+
+		&::before {
+			top: -4px;
+		}
+
+		&::after {
+			bottom: -4px;
+		}
+	}
+
 	.intro-section-presentation {
 		display: flex;
 		flex-direction: column;
@@ -16,8 +47,17 @@
 		gap: 2rem;
 		font-size: 2rem;
 		font-weight: bold;
+		@include breakpoint(s-mobile) {
+			font-size: 1.4rem;
+			width: 300px;
+			align-items: center;
+			justify-content: center;
+		}
 		.intro-section-presentation-hello {
 			font-size: 2rem;
+			@include breakpoint(s-mobile) {
+				font-size: 1.5rem;
+			}
 		}
 	}
 	.wave {
@@ -30,11 +70,19 @@
 	.intro-section-type-container {
 		height: 85px;
 		overflow: hidden;
+		@include breakpoint(s-mobile) {
+			height: 40px;
+		}
 	}
 	.intro-section-img {
 		margin-top: 5rem;
 		height: 500px;
 		width: 500px;
+		@include breakpoint(s-mobile) {
+			height: 300px;
+			width: 300px;
+			margin: 0;
+		}
 	}
 }
 

@@ -1,3 +1,5 @@
+@import "./breakpoints.scss";
+
 .footer {
 	background-color: rgb(6, 2, 28);
 	filter: opacity(97%);
@@ -9,6 +11,11 @@
 	justify-content: space-around;
 	font-family: "Orbitron", sans-serif;
 	font-size: 1.2rem;
+	@include breakpoint(s-mobile) {
+		margin-top: 2.5rem;
+		font-size: 1rem;
+		justify-content: space-between;
+	}
 	.footer-social-icons {
 		position: relative;
 		color: #700c86;
@@ -24,5 +31,11 @@
 		align-items: center;
 		justify-content: center;
 		animation: pulse 2s infinite ease-in-out;
+		@include breakpoint(s-mobile) {
+			width: 30px;
+			height: 30px;
+			font-size: 1.1rem;
+			margin-top: 0.5rem;
+		}
 	}
 }
