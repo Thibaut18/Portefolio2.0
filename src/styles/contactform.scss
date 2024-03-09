@@ -21,6 +21,7 @@
 		padding: 6px;
 		@include breakpoint(s-mobile) {
 			width: 280px;
+			font-size: 1.2rem;
 		}
 	}
 	.form-textarea {
@@ -32,6 +33,7 @@
 		padding: 8px;
 		@include breakpoint(s-mobile) {
 			width: 280px;
+			font-size: 1.4rem;
 		}
 	}
 	.form-input::placeholder {
@@ -46,6 +48,10 @@
 		font-size: 1.6rem;
 		text-align: center;
 		padding-top: 13rem;
+		@include breakpoint(s-mobile) {
+			padding-top: 12rem;
+			font-size: 1.4rem;
+		}
 	}
 	.form-input:focus,
 	.form-textarea:focus {
@@ -78,14 +84,14 @@
 	position: absolute;
 	top: 40%;
 	font-size: 1.2rem;
-
 	border-radius: 20px;
 	padding: 20px;
 	background-color: rgb(6, 2, 28);
 	@include breakpoint(s-mobile) {
 		width: 280px;
+		margin-top: 2rem;
 		margin-right: 1rem;
-		margin-right: 1rem;
+		margin-left: 1rem;
 		text-align: center;
 	}
 }

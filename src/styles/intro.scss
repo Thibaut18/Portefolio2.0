@@ -39,7 +39,12 @@
 			bottom: -4px;
 		}
 	}
-
+	@include breakpoint(tablet) {
+		flex-direction: row;
+		margin: 4rem 1rem 0rem 1rem;
+		gap: 0;
+		height: 430px;
+	}
 	.intro-section-presentation {
 		display: flex;
 		flex-direction: column;
@@ -48,6 +53,12 @@
 		font-size: 2rem;
 		font-weight: bold;
 		@include breakpoint(s-mobile) {
+			font-size: 1.4rem;
+			width: 300px;
+			align-items: center;
+			justify-content: center;
+		}
+		@include breakpoint(tablet) {
 			font-size: 1.4rem;
 			width: 300px;
 			align-items: center;
@@ -81,6 +92,11 @@
 		@include breakpoint(s-mobile) {
 			height: 300px;
 			width: 300px;
+			margin: 0;
+		}
+		@include breakpoint(tablet) {
+			height: 400px;
+			width: 400px;
 			margin: 0;
 		}
 	}

@@ -35,6 +35,9 @@
 		@include breakpoint(s-mobile) {
 			font-size: 1.8rem;
 		}
+		@include breakpoint(tablet) {
+			font-size: 3rem;
+		}
 	}
 }
 

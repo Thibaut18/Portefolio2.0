@@ -5,6 +5,11 @@
 	@include breakpoint(s-mobile) {
 		margin-top: 0;
 	}
+	@include breakpoint(tablet) {
+		margin-top: 1rem;
+		margin-left: 0.7rem;
+		margin-right: 0.7rem;
+	}
 	.header-nav-ul {
 		display: flex;
 		flex-direction: row;
@@ -14,6 +19,12 @@
 			justify-content: center;
 			font-size: 1.1rem;
 			gap: 3rem;
+			flex-wrap: wrap;
+		}
+		@include breakpoint(tablet) {
+			justify-content: center;
+			font-size: 1.5rem;
+			gap: 5rem;
 			flex-wrap: wrap;
 		}
 		.header-nav-li {
@@ -50,9 +61,18 @@
 				border-bottom-left-radius: 10px;
 			}
 
-			// Animation au survol de l'élément
-			&:hover::before,
-			&:hover::after {
+			@media (min-width: 769px) {
+				&:hover::before,
+				&:hover::after {
+					transform: translateX(0%) scaleX(1);
+				}
+			}
+
+			// L'effet pour :active et .active s'applique indépendamment de la taille de l'écran
+			&:active::before,
+			&:active::after,
+			&.active::before,
+			&.active::after {
 				transform: translateX(0%) scaleX(1);
 			}
 		}

@@ -23,6 +23,9 @@
 		@include breakpoint(s-mobile) {
 			margin: 0;
 		}
+		@include breakpoint(tablet) {
+			margin: 0;
+		}
 		.tech-icons {
 			font-size: 4.5em;
 			margin: 15px;
@@ -42,6 +45,11 @@
 				font-size: 2.5rem;
 				width: 65px;
 				height: 65px;
+			}
+			@include breakpoint(tablet) {
+				font-size: 4rem;
+				width: 130px;
+				height: 130px;
 			}
 			&:hover {
 				transform: scale(1.05);

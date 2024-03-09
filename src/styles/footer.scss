@@ -16,6 +16,9 @@
 		font-size: 1rem;
 		justify-content: space-between;
 	}
+	@include breakpoint(tablet) {
+		margin-top: 3rem;
+	}
 	.footer-social-icons {
 		position: relative;
 		color: #700c86;

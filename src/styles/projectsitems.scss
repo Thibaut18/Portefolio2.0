@@ -8,12 +8,34 @@
 	background-color: transparent;
 	opacity: 0.9;
 	transition: all 0.5s ease 0s;
-	height: 100%;
+	height: 560px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 2rem;
 	padding-bottom: 3rem;
+	position: relative;
+	@include breakpoint(s-mobile) {
+		flex: none;
+		width: 100%;
+		box-shadow: none;
+		padding-top: 1.9rem;
+		padding-bottom: 0;
+		height: auto;
+		&::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: rgba(129, 72, 144, 0.561);
+			box-shadow: 0 4px 4px rgba(129, 72, 144, 0.561);
+		}
+
+		&::before {
+			top: -4px;
+		}
+	}
 	&:hover {
 		transform: scale(1.02);
 		overflow: hidden;
@@ -29,6 +51,10 @@
 		opacity: 0.9;
 		border-radius: 1rem;
 		box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+		@include breakpoint(s-mobile) {
+			width: 250px;
+			height: 230px;
+		}
 	}
 	.projects-item-info {
 		display: flex;
@@ -36,9 +62,36 @@
 		align-items: center;
 		gap: 1rem;
 		margin-top: 1rem;
+		@include breakpoint(s-mobile) {
+			gap: 2rem;
+		}
+		.projects-item-subtitle {
+			width: 90%;
+			text-align: center;
+			display: flex;
+			height: 140px;
+			justify-content: center;
+			align-items: center;
+			@include breakpoint(s-mobile) {
+				height: auto;
+			}
+		}
 		.projects-item-btns {
 			display: flex;
 			gap: 1rem;
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			@include breakpoint(s-mobile) {
+				position: static;
+				bottom: auto;
+				left: auto;
+				transform: none;
+				gap: 0;
+				justify-content: space-around;
+				width: 90%;
+			}
 			.projects-btns {
 				background-color: #623686;
 				border-color: #623686;
@@ -46,7 +99,10 @@
 				transition: all 0.5s ease 0s;
 				border: none;
 				border-radius: 5px;
-				&:hover {
+				@include breakpoint(s-mobile) {
+					padding: 10px;
+				}
+				.pro &:hover {
 					background-color: #6d20c5d7;
 					border-color: #6d20c5d7;
 				}

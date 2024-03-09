@@ -9,6 +9,7 @@ import Projects from "../pages/Projects";
 import Contact from "../pages/Contact";
 import About from "../pages/About";
 import ErrorPage from "../pages/ErrorPage";
+import Cv from "../pages/Cv"
 
 function Routes() {
 	const routes = [
@@ -35,6 +36,10 @@ function Routes() {
 				{
                     path: "contact", 
                     element: <Contact />, 
+                },
+				{
+                    path: "cv", 
+                    element: <Cv />, 
                 },
 				{
 					path: "*",

@@ -8,8 +8,8 @@
 	margin-bottom: 5rem;
 	margin-left: 12rem;
 	margin-right: 3rem;
-	position: relative;
 	@include breakpoint(s-mobile) {
+		position: relative;
 		flex-direction: column-reverse;
 		margin: 0;
 		margin-top: 2rem;
@@ -32,6 +32,13 @@
 			bottom: -4px;
 		}
 	}
+	@include breakpoint(tablet) {
+		flex-direction: column;
+		margin: 0;
+		align-items: center;
+		margin-top: 4rem;
+	}
+
 	.presentation-section-h1-txt {
 		width: 500px;
 		display: flex;
@@ -44,6 +51,12 @@
 			text-align: justify;
 			margin-bottom: 2rem;
 		}
+		@include breakpoint(tablet) {
+			width: auto;
+			margin-left: 5rem;
+			margin-right: 5rem;
+			text-align: justify;
+		}
 
 		h1 {
 			margin-left: auto;
@@ -55,7 +68,10 @@
 		}
 		p {
 			@include breakpoint(s-mobile) {
-				font-size: 1.1Srem;
+				font-size: 1.1rem;
+			}
+			@include breakpoint(tablet) {
+				font-size: 1.3rem;
 			}
 		}
 	}
@@ -67,6 +83,11 @@
 			width: 310px;
 			height: 220px;
 			margin-top: 2rem;
+			margin-bottom: 2rem;
+		}
+		@include breakpoint(tablet) {
+			margin-top: 3rem;
+			margin-left: 2rem;
 			margin-bottom: 2rem;
 		}
 	}
