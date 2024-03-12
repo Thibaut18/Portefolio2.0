@@ -22,7 +22,7 @@ function Intro2 () {
                      <li>jeter un oeil à <span className="span-word">mes réalisations</span> dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/projects')}>"Projets"</span></li>
                      <li>me contacter via <span className="span-word">le formulaire</span> disponible dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/contact')}>"Contact"</span></li> </ul>
             <p>Bonne navigation !</p>
-            <img src="https://media.tenor.com/lZE8tZGKLQ4AAAAi/saturn-v-space.gif" className="rocket-man"/>
+            <img src="https://media.tenor.com/lZE8tZGKLQ4AAAAi/saturn-v-space.gif" alt="gif d'un spationaute accroché à sa fusée" className="rocket-man"/>
 </div>
 <div className='intro2-coding-pic-social-links'>
 <div className="intro2-coding-pic">
@@ -35,6 +35,7 @@ function Intro2 () {
                   target="_blank"
                   rel="noreferrer"
                   className="home-social-icons"
+                  title="Visitez mon profil GitHub"
                 >
                   <AiFillGithub />
                 </a>
@@ -45,6 +46,7 @@ function Intro2 () {
                   target="_blank"
                   rel="noreferrer"
                   className="home-social-icons"
+                  title="Visitez mon profil LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>

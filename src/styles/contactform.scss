@@ -35,6 +35,9 @@
 			width: 280px;
 			font-size: 1.4rem;
 		}
+		@include breakpoint(tablet) {
+			width: 100%;
+		}
 	}
 	.form-input::placeholder {
 		color: #b968c7;
@@ -93,5 +96,8 @@
 		margin-right: 1rem;
 		margin-left: 1rem;
 		text-align: center;
+	}
+	@include breakpoint(tablet) {
+		margin-top: 6rem;
 	}
 }

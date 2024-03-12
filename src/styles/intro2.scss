@@ -120,6 +120,11 @@
 				width: 280px;
 				height: 280px;
 			}
+			@include breakpoint(c-portable) {
+				margin-top: 2rem;
+				width: 400px;
+				height: 400px;
+			}
 			img {
 				width: 320px;
 				height: 320px;
@@ -128,6 +133,10 @@
 				@include breakpoint(s-mobile) {
 					width: 280px;
 					height: 280px;
+				}
+				@include breakpoint(c-portable) {
+					width: 400px;
+					height: 400px;
 				}
 			}
 

@@ -67,6 +67,8 @@
 			}
 		}
 		p {
+			font-size: 1.2rem;
+			text-align: justify;
 			@include breakpoint(s-mobile) {
 				font-size: 1.1rem;
 			}

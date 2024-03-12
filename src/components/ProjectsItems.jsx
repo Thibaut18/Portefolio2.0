@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'; // Icône GitHub
-import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'; // Icône pour les liens externes (Demo)
+import { faGithub } from '@fortawesome/free-brands-svg-icons'; 
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'; 
 import "../styles/projectsitems.scss";
 
 function ProjectsItems({ title, subtitle, imgSrc, alt, repoUrl, demoUrl }) {
