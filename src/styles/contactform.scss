@@ -7,6 +7,9 @@
 	gap: 1rem;
 	margin-top: 3rem;
 	align-items: center;
+	@include breakpoint(s-mobile) {
+		width: 100%;
+	}
 	.form-label {
 		font-size: 2rem;
 		@include breakpoint(s-mobile) {
@@ -20,7 +23,7 @@
 		width: 20rem;
 		padding: 6px;
 		@include breakpoint(s-mobile) {
-			width: 280px;
+			width: 90%;
 			font-size: 1.2rem;
 		}
 	}
@@ -32,8 +35,9 @@
 		font-size: 1.6rem;
 		padding: 8px;
 		@include breakpoint(s-mobile) {
-			width: 280px;
+			width: 90%;
 			font-size: 1.4rem;
+			min-height: 400px;
 		}
 		@include breakpoint(tablet) {
 			width: 100%;
