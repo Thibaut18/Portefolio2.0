@@ -14,6 +14,7 @@ function Cv () {
 						Télécharger 
 					</button>
 				</a>
+				<div className="cv-txt-mobile">CV disponible en format image sur cette page à partir des versions tablettes du site</div>
         <img src={monCv} className="cv-section-img" alt="Mon Cv"/>
         <a
 					className="cv-btn-link"

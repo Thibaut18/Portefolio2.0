@@ -18,6 +18,9 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+		padding-top: 0.5rem;
 	}
 	@include breakpoint(tablet) {
 		font-size: 0.6rem;
