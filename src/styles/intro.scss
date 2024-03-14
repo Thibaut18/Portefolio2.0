@@ -45,6 +45,11 @@
 		gap: 0;
 		height: 430px;
 	}
+	@include breakpoint(m-screen) {
+		margin-left: 8rem;
+		margin-right: 8rem;
+		padding-left: 3rem;
+	}
 	.intro-section-presentation {
 		display: flex;
 		flex-direction: column;

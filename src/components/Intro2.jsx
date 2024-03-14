@@ -20,7 +20,8 @@ function Intro2 () {
                   <li className='li-style-none'>Sur ce <span className="span-word">site </span>vous pouvez :</li>
                      <li>en apprendre plus sur <span className="span-word">moi</span> et mes <span className="span-word">skills</span> techniques dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/about')}>"À Propos"</span></li> 
                      <li>jeter un oeil à <span className="span-word">mes réalisations</span> dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/projects')}>"Projets"</span></li>
-                     <li>me contacter via <span className="span-word">le formulaire</span> disponible dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/contact')}>"Contact"</span></li> </ul>
+                     <li>me contacter via <span className="span-word">le formulaire</span> disponible dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/contact')}>"Contact"</span></li> 
+                     <li>prendre connaissance de <span className="span-word">mon CV </span> et le <span className="span-word">télécharger</span> dans la section <span className="span-word nav-word" onClick={() => handleNavigation('/cv')}>"Mon CV"</span></li></ul>
             <p>Bonne navigation !</p>
             <img src="https://media.tenor.com/lZE8tZGKLQ4AAAAi/saturn-v-space.gif" alt="gif d'un spationaute accroché à sa fusée" className="rocket-man"/>
 </div>

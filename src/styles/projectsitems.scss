@@ -41,6 +41,10 @@
 		padding-top: 1rem;
 		margin-bottom: 3rem;
 	}
+	@include breakpoint(m-screen) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 	@media (min-width: 900px) {
 		&:hover {
 			transform: scale(1.02);

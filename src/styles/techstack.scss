@@ -26,6 +26,10 @@
 		@include breakpoint(tablet) {
 			margin: 0;
 		}
+		@include breakpoint(m-screen) {
+			margin-left: 7rem;
+			margin-right: 7rem;
+		}
 		.tech-icons {
 			font-size: 4.5em;
 			margin: 15px;

@@ -6,7 +6,7 @@ function Intro () {
     return (
         <section className="intro-section">
             <div className="intro-section-presentation">
-            <h1 className="intro-section-presentation-hello">Hello There ! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span></h1>
+            <h1 className="intro-section-presentation-hello">Hello There ! <span className="wave" role="img" aria-label="Salutation">👋🏻</span></h1>
             <p>Je suis <span className="span-word">Thibaut Teinturier</span></p>
             <div className="intro-section-type-container">
         <Type/>
