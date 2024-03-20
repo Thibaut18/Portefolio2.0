@@ -30,6 +30,9 @@
 		align-items: center;
 		padding-bottom: 1.6rem;
 	}
+	@include breakpoint(m-screen) {
+		gap: 5rem;
+	}
 	.header-logo {
 		color: #b968c7;
 		font-weight: bold;
@@ -40,6 +43,9 @@
 			font-size: 1.8rem;
 		}
 		@include breakpoint(tablet) {
+			font-size: 3rem;
+		}
+		@include breakpoint(xl-screen) {
 			font-size: 3rem;
 		}
 	}

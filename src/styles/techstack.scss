@@ -30,6 +30,10 @@
 			margin-left: 7rem;
 			margin-right: 7rem;
 		}
+		@include breakpoint(l-screen) {
+			margin-left: 7rem;
+			margin-right: 7rem;
+		}
 		.tech-icons {
 			font-size: 4.5em;
 			margin: 15px;

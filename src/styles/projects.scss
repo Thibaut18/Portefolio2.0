@@ -11,6 +11,16 @@
 	@include breakpoint(tablet) {
 		margin: 2rem 0rem;
 	}
+	@include breakpoint(m-screen) {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
+		margin-bottom: 3rem;
+	}
+	@include breakpoint(l-screen) {
+		margin-left: 0.8rem;
+		margin-right: 0.8rem;
+		margin-bottom: 3rem;
+	}
 	.projects-section-title {
 		font-size: 3rem;
 		margin-bottom: 3rem;

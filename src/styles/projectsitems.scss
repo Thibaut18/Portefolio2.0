@@ -42,8 +42,11 @@
 		margin-bottom: 3rem;
 	}
 	@include breakpoint(m-screen) {
-		padding-left: 1rem;
-		padding-right: 1rem;
+		padding: 0;
+		height: 580px;
+	}
+	@include breakpoint(xl-screen) {
+		height: 700px;
 	}
 	@media (min-width: 900px) {
 		&:hover {
@@ -72,6 +75,15 @@
 			width: 290px;
 			height: 261px;
 		}
+		@include breakpoint(m-screen) {
+			width: 290px;
+			height: 261px;
+			margin-top: 1rem;
+		}
+		@include breakpoint(xl-screen) {
+			width: 520px;
+			height: 390px;
+		}
 	}
 	.projects-item-info {
 		display: flex;
@@ -82,6 +94,9 @@
 		@include breakpoint(s-mobile) {
 			gap: 2rem;
 			width: 100%;
+		}
+		@include breakpoint(xl-screen) {
+			font-size: 1.2rem;
 		}
 		.projects-item-subtitle {
 			width: 90%;

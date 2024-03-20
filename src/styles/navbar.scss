@@ -27,6 +27,12 @@
 			gap: 2rem;
 			flex-wrap: wrap;
 		}
+		@include breakpoint(m-screen) {
+			font-size: 1.4rem;
+		}
+		@include breakpoint(xl-screen) {
+			font-size: 1.4rem;
+		}
 		.header-nav-li {
 			list-style: none;
 			display: inline-block;

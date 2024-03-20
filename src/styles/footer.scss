@@ -16,6 +16,9 @@
 		font-size: 1rem;
 		justify-content: space-between;
 	}
+	@include breakpoint(xl-screen) {
+		font-size: 1.4rem;
+	}
 	@include breakpoint(tablet) {
 		margin-top: 3rem;
 	}

@@ -15,11 +15,15 @@ $breakpoints: (
 		max: 767.9px,
 	),
 	l-screen: (
+		min: 1442px,
+		max: 1999px,
+	),
+	xl-screen: (
 		min: 2000px,
 		max: 2600px,
 	),
 	m-screen: (
-		min: 1300px,
+		min: 1200px,
 		max: 1441px,
 	),
 	c-portable: (
